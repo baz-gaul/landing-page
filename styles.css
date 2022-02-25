@@ -49,6 +49,10 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+a{
+    text-decoration: none;
+    color: var(--header-logo-text-color);
+}
 
 .header{
     display: flex;
@@ -80,7 +84,7 @@ ul{
 
 .hero{
     display: flex;
-    flex-flow: row no-wrap;
+    flex-flow: row;
     align-items: space-around;
     justify-content: space-around;
     background-color: var(--dark-bg-color);
