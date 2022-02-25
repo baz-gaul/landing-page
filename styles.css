@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* vars */
+
+    /* hero and footer */
+    --dark-bg-color: #1F2937;
+
+    /* "this website is awesome" */
+    --hero-main-text-color: #F9FAF8;
+    --hero-main-text-size: 48px;
+    --hero-main-text-weight: bold;
+
+    /* Hero Secondary Text, Header Link Text */
+    --hero-secondary-text-size: 24px;
+    --hero-secondary-text-color: #E5E7EB;
+    --hero-secondary-font-weight: lighter;
+
+    /* Header Logo Text */
+    --header-logo-text-size: 24px;
+    --header-logo-text-color: #F9FAF8;
+
+    /* Button Color */
+    --button-color: #3882F6;
+
+    /* call to action background color */
+    --call-to-action-bg-color: #3882F6;
+
+    /* Information header Text */
+    --information-header-text-size: 36px;
+    --information-header-text-weight: bold;
+    --information-header-text-color: #1F2937;
+
+    /* Quote Section BG color */
+    --quote-section-bg-color: #E5E7EB;
+
+    /* quote text */
+    --quote-text-size: 36px;
+    --quote-text-font-style: italic;
+    --quote-text-font-weight: lighter;
+    --quote-text-color: #1F2937;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-bg-color);
+    padding: 10px 400px 0px 400px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header h1{
+    font-size: var(--header-logo-text-size);
+    color: var(--header-logo-text-color);
+}
+
+.header ul a li{
+    font-size: 14px;
+    color: var(--hero-secondary-text-color);
+}
+
+.hero{
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    background-color: var(--dark-bg-color);
+    padding: 100px 400px;
+}
+
+img{
+    width: 900px;
+    max-width: 50;
+    height: 200px;
+}
+
+.hero h1{
+    color: var(--hero-main-text-color);
+    font-size: var(--hero-main-text-size);
+    font-weight: var(--hero-main-text-weight);
+}
+
+.hero p{
+    font-size: var(--hero-secondary-text-size);
+    color: var(--hero-secondary-text-color);
+    font-weight: var(--hero-secondary-font-weight);
+}
+
+button{
+    display: block;
+    background-color: var(--button-color);
+    color: var(--hero-main-text-color);
+    font-weight: var(--hero-main-text-weight);
+    border: none;
+    border-radius: 5%;
+    width: 80px;
+    height: 30px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 200px 100px;
+}
+
+.info h2{
+    text-align: center;
+}
+li{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    display: block;
+}
+
+.info > ul > li{
+    width: 200px;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.info >ul > li > img{
+    height: 200px;
+    width: 100%;
+    border: 2px solid var(--button-color);
+    border-radius: 5%;
+}
+.info > ul{
+    gap: 60px;
+}
+.quote{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 500px;
+    background-color: var(--quote-section-bg-color);
+}
+.quote>p{
+    font-size: var(--quote-text-size);
+    font-style: var(--quote-text-font-style);
+    color: var(--quote-text-color);
+}
+.quote>h5{
+    text-align: right;
+    /* to do */
+}
+.callToActionParent{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 200px;
+    justify-content: center;
+    align-items: center;
+}
+.callToActionInner{
+    background-color: var(--call-to-action-bg-color);
+    display: flex;
+    flex-direction: row;
+    background-color: var(--call-to-action-bg-color);
+    padding: 10px 50px;
+    border-radius: 3%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.callToActionLeftCol>p{
+    color: var(--hero-secondary-text-color);
+    font-size: 12px;
+    font-weight: lighter;
+}
+.callToActionLeftCol>h5{
+    color: var(--hero-main-text-color);
+    font-size: 36px;
+    font-weight: lighter;
+
+}
+.callToActionLeftCol{
+    display: flex;
+    flex-direction: column;
+}
+.callToActionInner>button{
+    background-color: white;
+    color: var(--button-color);
+}
+.hero-left-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.footer{
+    background-color: var(--information-header-text-color);
+    color: var(--hero-secondary-text-color);
+    font-weight: var(--hero-secondary-font-weight);
+    font-size: 14px;
+    text-align: center;
+    padding: 25px 0px;
+}
+a{
+    text-decoration: none;
+}
